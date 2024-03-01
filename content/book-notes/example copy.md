@@ -1,8 +1,11 @@
 ---
-title: "Title of the page"
+title: "Title of the page of the page"
 description: "meta description of the page meta description of the page meta description of meta description of the page meta description of the page meta description of"
+author: "John Verdon"
+tags: ["Sosyoloji"]
+rating: "5.0"
 date: "21.02.2024"
-image: "/img/test.jpg"
+image: "/img/0000000633872-1.jpg"
 ---
 
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
