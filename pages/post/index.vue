@@ -5,12 +5,7 @@
   <div class="grid gap-11 lg:grid-cols-2 lg:gap-x-9 lg:gap-y-12 mt-10">
     <ContentList path="/post">
       <template #default="{ list }">
-        <PostCard
-          v-for="post in list"
-          :data="post"
-          :key="post._path"
-          class=""
-        />
+        <PostCard v-for="post in list" :data="post" :key="post._path" />
       </template>
       <template #not-found>
         <p>Yazı bulunamadı...</p>

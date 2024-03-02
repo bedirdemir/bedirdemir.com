@@ -68,3 +68,11 @@ const readingTime = (words, readingSpeed = 200) => {
   return min === 1 ? "1 dakika" : min + " dakika";
 };
 </script>
+<style scoped>
+.capsule {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+</style>

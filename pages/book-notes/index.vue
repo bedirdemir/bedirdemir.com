@@ -8,12 +8,7 @@
   <div class="grid gap-11 lg:grid-cols-3 lg:gap-x-7 lg:gap-y-10 mt-10">
     <ContentList path="/book-notes">
       <template #default="{ list }">
-        <BookCard
-          v-for="book in list"
-          :data="book"
-          :key="book._path"
-          class=""
-        />
+        <BookCard v-for="book in list" :data="book" :key="book._path" />
       </template>
       <template #not-found>
         <p>Kitap bulunamadı...</p>
