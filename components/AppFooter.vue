@@ -1,5 +1,5 @@
 <template>
-  <footer class="text-center mt-14 pb-10 opacity-70 mx-6">
+  <footer class="text-center mt-20 pb-10 opacity-60 mx-6">
     <div>
       Bu web sitesinin kaynak kodlarına
       <nuxt-link
