@@ -3,10 +3,8 @@
     class="bg-[#F4F4F5] flex flex-col lg:flex-row justify-between lg:items-center rounded-xl py-4 px-4 lg:p-4 mx-6 dark:bg-gray-800"
   >
     <div class="flex justify-between items-center">
-      <NuxtLink to="/"
-        ><h1 class="font-semibold opacity-90 text-nowrap">
-          Bedir Zana Demir
-        </h1></NuxtLink
+      <NuxtLink to="/" class="font-semibold opacity-90 text-nowrap"
+        >Bedir Zana Demir</NuxtLink
       >
       <div class="flex gap-4 lg:gap-4">
         <svg

@@ -1,18 +1,24 @@
 <template>
-  <div class="flex flex-col lg:flex-row items-center gap-8 pt-4">
+  <div
+    class="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-10 pt-2 lg:pt-4"
+  >
     <img
-      class="size-48 lg:size-52 rounded-full"
+      class="size-48 lg:size-52 lg:mt-3 rounded-full"
       src="/img/my.webp"
       alt="Bedir Zana Demir"
     />
     <div class="text-center lg:text-left">
       <h2 class="text-2xl mb-3 font-medium">Merhaba 👋</h2>
-      <p class="leading-6 font-light text-lg mb-7">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ad
-        deleniti voluptate molestias, quos vero!
+      <p class="leading-8 font-light text-lg mb-7">
+        Çocukluğumdan beri teknolojiye ve yazılıma meraklıyım. Frontend
+        developer olarak kullanıcı deneyimini gözeten web uygulamaları
+        tasarlıyor ve geliştiriyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi
+        ve ürün geliştirmeyi seviyorum. Bunların haricindeki kişisel
+        zamanlarımda kitap okumayı, fotoğraf çekmeyi ve bir ziraat mühendisi
+        adayı olarak doğada olmayı seviyorum.
       </p>
       <!-- social links  -->
-      <div class="flex flex-wrap gap-3">
+      <div class="flex flex-wrap gap-3 justify-center lg:justify-normal">
         <nuxt-link
           class="inline-flex items-center gap-2 shadow-sm bg-[#18181B] text-white py-2 px-3 rounded-lg font-medium hover:opacity-85 active:scale-95 transition-opacity dark:bg-[#f4f4f5] dark:text-gray-900"
           to="mailto:bedir@proton.me"
@@ -127,3 +133,10 @@
     </div>
   </div>
 </template>
+<script setup>
+useSeoMeta({
+  title: "Bedir Zana Demir",
+  description:
+    "Çocukluğumdan beri teknolojiye ve yazılıma meraklıyım. Frontend developer olarak kullanıcı deneyimini gözeten web uygulamaları tasarlıyor ve geliştiriyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün geliştirmeyi seviyorum. Bunların haricindeki kişisel zamanlarımda kitap okumayı, fotoğraf çekmeyi ve bir ziraat mühendisi adayı olarak doğada olmayı seviyorum.",
+});
+</script>

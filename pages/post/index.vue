@@ -18,3 +18,9 @@
     </ContentList>
   </div>
 </template>
+<script setup>
+useSeoMeta({
+  title: "Yazılar | Bedir Zana Demir",
+  description: "İlgi alanıma giren çeşitli konularda yazdığım notlar.",
+});
+</script>

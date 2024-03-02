@@ -1,8 +1,8 @@
 <template>
   <div>
     <p class="text-lg">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, maxime?
-      Accusantium debitis exercitationem esse cumque!
+      Fotoğraf çekerek anı biriktirmek çevremdeki detayları ve güzellikleri
+      keşfetmemi sağlıyor.
     </p>
     <!-- stats -->
     <div class="grid grid-cols-2 gap-4 lg:gap-10 justify-between mt-10">
@@ -78,6 +78,12 @@
 const { data } = await useFetch("/api/photos");
 const photos = data.value.photos;
 const stats = data.value.stats;
+
+useSeoMeta({
+  title: "Fotoğraflar | Bedir Zana Demir",
+  description:
+    "Fotoğraf çekerek anı biriktirmek çevremdeki detayları ve güzellikleri keşfetmemi sağlıyor.",
+});
 
 const formatNumberWithDot = (number) => {
   var reversedNumber = number.toString().split("").reverse().join("");

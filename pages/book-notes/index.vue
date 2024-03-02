@@ -21,3 +21,10 @@
     </ContentList>
   </div>
 </template>
+<script setup>
+useSeoMeta({
+  title: "Kitap Notları | Bedir Zana Demir",
+  description:
+    "Okuduğum kitaplardan önemli çıkarımlarımın ve notlarımın yer aldığı kişisel bir kütüphane.",
+});
+</script>
