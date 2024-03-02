@@ -1,5 +1,5 @@
 <template>
-  <div
+  <header
     class="bg-[#F4F4F5] flex flex-col lg:flex-row justify-between lg:items-center rounded-xl py-4 px-4 lg:p-4 mx-6 dark:bg-gray-800"
   >
     <div class="flex justify-between items-center">
@@ -53,7 +53,7 @@
         />
       </svg>
     </div>
-  </div>
+  </header>
 </template>
 <script setup>
 const isOpen = ref(false);
