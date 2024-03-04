@@ -53,10 +53,10 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "/": { prerender: true },
-    "/post": { isr: 100000 },
-    "/post/**": { isr: 100000 },
-    "/book-notes": { isr: 100000 },
-    "/book-notes/**": { isr: 100000 },
-    "/photos": { isr: 100000 },
+    "/post": { swr: 100000 },
+    "/post/**": { swr: 100000 },
+    "/book-notes": { swr: 100000 },
+    "/book-notes/**": { swr: 100000 },
+    "/photos": { swr: 100000 },
   },
 });
