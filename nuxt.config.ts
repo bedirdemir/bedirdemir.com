@@ -52,7 +52,7 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    "/": { prerender: true },
+    "/": { swr: 60 * 60 * 48 },
     "/post": { swr: 60 * 60 * 48 },
     "/post/**": { swr: 60 * 60 * 48 },
     "/book-notes": { swr: 60 * 60 * 48 },
