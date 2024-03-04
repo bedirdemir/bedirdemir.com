@@ -53,6 +53,10 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "/": { prerender: true },
-    "/**/**": { cache: { swr: true, maxAge: 60 * 60 * 48 } },
+    "/post": { cache: { maxAge: 60 * 60 * 48 } },
+    "/post/**": { cache: { maxAge: 60 * 60 * 48 } },
+    "/book-notes": { cache: { maxAge: 60 * 60 * 48 } },
+    "/book-notes/**": { cache: { maxAge: 60 * 60 * 48 } },
+    "/photos": { cache: { maxAge: 60 * 60 * 48 } },
   },
 });
