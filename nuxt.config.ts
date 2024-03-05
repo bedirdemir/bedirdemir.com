@@ -49,6 +49,21 @@ export default defineNuxtConfig({
             "Çocukluğumdan beri teknoloji ve yazılıma meraklıyım. Frontend developer olarak kullanıcı deneyimini gözeten web uygulamaları tasarlıyor ve geliştiriyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün geliştirmeyi seviyorum. Bunların haricindeki kişisel zamanlarımda kitap okumayı, fotoğraf çekmeyi ve bir ziraat mühendisi adayı olarak doğada olmayı seviyorum.",
         },
       ],
+      script: [
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-ZLPR3ETG4R",
+          async: "true",
+        },
+        {
+          children: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-ZLPR3ETG4R');
+        `,
+        },
+      ],
     },
   },
   routeRules: {
