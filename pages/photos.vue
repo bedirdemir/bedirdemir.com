@@ -61,11 +61,11 @@
     </div>
   </div>
   <!-- photos -->
-  <div class="grid items-end gap-6 lg:grid-cols-2 lg:gap-y-10 lg:gap-x-6 mt-12">
+  <div class="grid items-end gap-8 lg:grid-cols-2 lg:gap-y-10 lg:gap-x-6 mt-12">
     <Photo v-for="(photo, i) in photos" :data="photo" :key="i" />
   </div>
   <!-- more -->
-  <div class="mt-10 text-center font-medium">
+  <div class="mt-16 text-center font-medium">
     <nuxt-link
       to="https://unsplash.com/@bedirdemir"
       target="_blank"

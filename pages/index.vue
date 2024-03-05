@@ -9,7 +9,7 @@
     />
     <div class="text-center lg:text-left">
       <h2 class="text-2xl mb-3 font-medium">Merhaba 👋</h2>
-      <p class="leading-8 font-light text-lg mb-7">
+      <p class="leading-[1.85rem] font-light text-lg mb-7">
         Çocukluğumdan beri teknolojiye ve yazılıma meraklıyım. Frontend
         developer olarak kullanıcı deneyimini gözeten web uygulamaları
         tasarlıyor ve geliştiriyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi
