@@ -5,7 +5,10 @@
       keşfetmemi sağlıyor.
     </p>
     <!-- stats -->
-    <div class="grid grid-cols-2 gap-4 lg:gap-10 justify-between mt-10">
+    <div
+      v-if="stats"
+      class="grid grid-cols-2 gap-4 lg:gap-10 justify-between mt-10"
+    >
       <div
         class="flex items-center justify-between gap-2 bg-gray-50 rounded-xl shadow-sm border px-4 lg:px-5 py-3 dark:bg-gray-800 dark:border-gray-700"
       >
@@ -61,7 +64,10 @@
     </div>
   </div>
   <!-- photos -->
-  <div class="grid items-end gap-8 lg:grid-cols-2 lg:gap-y-10 lg:gap-x-6 mt-12">
+  <div
+    v-if="photos"
+    class="grid items-end gap-8 lg:grid-cols-2 lg:gap-y-10 lg:gap-x-6 mt-12"
+  >
     <Photo v-for="(photo, i) in photos" :data="photo" :key="i" />
   </div>
   <!-- more -->
