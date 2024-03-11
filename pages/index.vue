@@ -4,7 +4,7 @@
   >
     <img
       class="size-48 lg:size-52 lg:mt-3 rounded-full"
-      src="/img/my.webp"
+      src="/img/my.jpg"
       alt="Bedir Zana Demir"
     />
     <div class="text-center lg:text-left">
