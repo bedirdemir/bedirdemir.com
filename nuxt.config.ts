@@ -69,9 +69,9 @@ export default defineNuxtConfig({
   routeRules: {
     "/": { prerender: true },
     "/post": { swr: 60 * 60 * 48 },
-    "/post/**": { isr: 60 * 60 * 48 },
+    "/post/**": { isr: 60 * 60 * 72 },
     "/book-notes": { swr: 60 * 60 * 48 },
-    "/book-notes/**": { isr: 60 * 60 * 48 },
+    "/book-notes/**": { isr: 60 * 60 * 72 },
     "/photos": { swr: 60 * 60 * 48 },
     "/api/photos": { swr: 60 * 60 * 48 },
   },
