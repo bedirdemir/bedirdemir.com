@@ -81,7 +81,9 @@
   </div>
 </template>
 <script setup>
-const { data, pending, error } = await useFetch("/api/photos");
+const { data, pending, error } = await useFetch("/api/photos", {
+  server: false,
+});
 const photos = data?.value?.photos;
 const stats = data?.value?.stats;
 
