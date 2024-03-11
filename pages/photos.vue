@@ -82,8 +82,8 @@
 </template>
 <script setup>
 const { data, pending, error } = await useFetch("/api/photos");
-const photos = data.value.photos;
-const stats = data.value.stats;
+const photos = data?.value?.photos;
+const stats = data?.value?.stats;
 
 useSeoMeta({
   title: "Fotoğraflar | Bedir Zana Demir",
