@@ -52,7 +52,10 @@
             </div>
           </div>
         </div>
-        <ContentRenderer :value="doc" class="text-lg" />
+        <ContentRenderer
+          :value="doc"
+          class="text-[1.04rem] leading-[1.7rem] lg:text-lg"
+        />
       </article>
     </template>
     <template #not-found>
