@@ -3,20 +3,25 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
   modules: ["@nuxt/content", "@nuxtjs/color-mode"],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   content: {
     markdown: {
       remarkPlugins: ["remark-reading-time"],
     },
   },
+
   colorMode: {
     classSuffix: "",
+    preference: "light",
   },
+
   app: {
     head: {
       meta: [
@@ -66,13 +71,6 @@ export default defineNuxtConfig({
       ],
     },
   },
-  routeRules: {
-    "/": { prerender: true },
-    "/post": { swr: 60 * 60 * 48 },
-    "/post/**": { isr: 60 * 60 * 72 },
-    "/book-notes": { swr: 60 * 60 * 48 },
-    "/book-notes/**": { isr: 60 * 60 * 72 },
-    "/photos": { swr: 60 * 60 * 48 },
-    "/api/photos": { swr: 60 * 60 * 48 },
-  },
+
+  compatibilityDate: "2024-11-04",
 });
