@@ -1,5 +1,5 @@
 <template>
-  <NuxtLoadingIndicator :height="1.5" :throttle="10" />
+  <NuxtLoadingIndicator :height="2" :throttle="10" />
   <div
     class="bg-white transition-colors duration-75 dark:bg-gray-900 dark:text-white"
   >
