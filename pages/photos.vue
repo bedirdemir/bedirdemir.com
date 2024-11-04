@@ -66,7 +66,7 @@
   <!-- photos -->
   <div
     v-if="!pending && !error"
-    class="grid items-end gap-8 lg:grid-cols-2 lg:gap-y-10 lg:gap-x-6 mt-12"
+    class="grid items-end gap-y-6 lg:grid-cols-2 lg:gap-y-8 lg:gap-x-6 mt-12"
   >
     <Photo v-for="(photo, i) in photos" :data="photo" :key="i" />
   </div>

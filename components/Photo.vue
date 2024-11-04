@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     :to="data.links.html"
-    class="hover:scale-105 duration-500 transition-all"
+    class="focus:scale-105 duration-500 transition-all"
     target="_blank"
   >
     <img

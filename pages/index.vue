@@ -1,13 +1,29 @@
 <template>
   <div
-    class="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-10 pt-2 lg:pt-4"
+    class="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-10 pt-0 lg:pt-4"
   >
-    <img
-      class="size-48 lg:size-52 lg:mt-3 rounded-full"
-      src="/img/my.jpg"
-      alt="Bedir Zana Demir"
-    />
-    <div class="text-center lg:text-left">
+    <div class="lg:w-1/3 flex flex-col items-center">
+      <img
+        class="size-48 lg:size-52 lg:mt-3 rounded-full lg:rounded-2xl"
+        src="/img/my.jpg"
+        alt="Bedir Zana Demir"
+      />
+      <div
+        class="mt-4 opacity-80 font-light text-sm lg:text-base flex flex-col gap-1 lg:gap-2 items-center lg:items-start"
+      >
+        <div class="">
+          Data analyst & Frontend developer at
+          <nuxt-link
+            class="underline underline-offset-2"
+            target="_blank"
+            to="https://www.tarla.io/"
+            >tarla.io</nuxt-link
+          >
+        </div>
+        <div>Ankara, Türkiye</div>
+      </div>
+    </div>
+    <div class="lg:w-3/4 text-center lg:text-left">
       <h2 class="text-2xl mb-3 font-medium inline-flex items-center gap-2">
         Merhaba
         <svg
@@ -33,7 +49,9 @@
           />
         </svg>
       </h2>
-      <p class="leading-[1.85rem] font-light text-lg mb-7">
+      <p
+        class="leading-relaxed lg:leading-[1.85rem] font-light lg:text-lg mb-7"
+      >
         Çocukluğumdan beri teknolojiye ve yazılıma meraklıyım. Frontend
         developer olarak kullanıcı deneyimini gözeten web uygulamaları
         tasarlıyor ve geliştiriyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi
@@ -72,6 +90,21 @@
               d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
             /></svg
           >GitHub</nuxt-link
+        >
+        <nuxt-link
+          class="inline-flex items-center gap-2 shadow-sm bg-[#18181B] text-white py-2 px-3 rounded-lg font-medium hover:opacity-85 active:scale-95 transition-opacity dark:bg-[#f4f4f5] dark:text-gray-900"
+          to="https://www.linkedin.com/in/bedir-zana-demir-4493b731b/"
+          target="_blank"
+          ><svg
+            class="size-6"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+          >
+            <path
+              fill="currentColor"
+              d="M26.2 4H5.8C4.8 4 4 4.8 4 5.7v20.5c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V5.7c0-.9-.8-1.7-1.8-1.7M11.1 24.4H7.6V13h3.5zm-1.7-13c-1.1 0-2.1-.9-2.1-2.1s.9-2.1 2.1-2.1c1.1 0 2.1.9 2.1 2.1s-1 2.1-2.1 2.1m15.1 12.9H21v-5.6c0-1.3 0-3.1-1.9-3.1S17 17.1 17 18.5v5.7h-3.5V13h3.3v1.5h.1c.5-.9 1.7-1.9 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v6.2z"
+            /></svg
+          >LinkedIn</nuxt-link
         >
         <nuxt-link
           class="inline-flex items-center gap-2 shadow-sm bg-[#18181B] text-white py-2 px-3 rounded-lg font-medium hover:opacity-85 active:scale-95 transition-opacity dark:bg-[#f4f4f5] dark:text-gray-900"
