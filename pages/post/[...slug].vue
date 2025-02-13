@@ -2,22 +2,23 @@
   <ContentDoc>
     <template #default="{ doc }">
       <article
-        class="prose prose-zinc max-w-none prose-img:rounded prose-img:w-full dark:prose-invert"
+        class="prose prose-neutral prose-rose max-w-none prose-img:rounded prose-img:border prose-img:w-full dark:prose-invert"
       >
         <h1 class="font-bold tracking-tight my-0">{{ doc.title }}</h1>
         <h2 class="my-5 text-xl font-normal opacity-90">
           {{ doc.description }}
         </h2>
-        <img :src="doc.image" :alt="doc.description" class="aspect-[16/9]" />
+        <img
+          :src="doc.image"
+          :alt="doc.description"
+          class="aspect-[16/9] border-none"
+        />
         <div class="flex gap-2 opacity-70 tracking-widest text-sm lg:text-base">
           <time :datetime="doc.date">{{ doc.date }}</time>
           <span>·</span>
           <div>{{ readingTime(doc.readingTime.words) }} okuma süresi</div>
         </div>
-        <ContentRenderer
-          :value="doc"
-          class="text-[1.04rem] leading-[1.7rem] lg:text-lg"
-        />
+        <ContentRenderer :value="doc" class="lg:text-lg" />
       </article>
     </template>
     <template #not-found>
