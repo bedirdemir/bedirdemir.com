@@ -1,4 +1,5 @@
 ---
+id: 1
 title: "Hello World"
 description: "Kişisel web sitem hakkında ilk blog yazım."
 date: "11 Mart 2024"

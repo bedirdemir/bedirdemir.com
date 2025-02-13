@@ -10,6 +10,6 @@
       >
       erişebilirsiniz.
     </div>
-    <div class="mt-3 text-sm font-light">Content © 2024 Bedir Zana Demir</div>
+    <div class="mt-3 text-sm font-light">Content © 2025 Bedir Zana Demir</div>
   </footer>
 </template>

@@ -10,11 +10,11 @@
     <!-- details  -->
     <div class="flex flex-col gap-2 p-1">
       <div
-        class="flex items-center gap-4 text-gray-500 text-sm tracking-widest dark:text-gray-400"
+        class="flex items-center gap-4 text-gray-500 text-sm tracking-wider dark:text-gray-400"
       >
-        <div class="flex gap-1 items-center">
+        <div class="flex gap-2 items-center">
           <svg
-            class="size-5"
+            class="size-4"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -30,9 +30,9 @@
           </svg>
           <time :datetime="data.date">{{ data.date }}</time>
         </div>
-        <div class="flex gap-1 items-center">
+        <div class="flex gap-2 items-center">
           <svg
-            class="size-5"
+            class="size-4"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1024 1024"
           >

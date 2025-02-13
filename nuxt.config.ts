@@ -71,6 +71,21 @@ export default defineNuxtConfig({
       ],
     },
   },
-
+  routeRules: {
+    "/post/**": {
+      // Redirect permanently using a 308 code
+      redirect: {
+        to: "/**",
+        statusCode: 308,
+      },
+    },
+    "/post": {
+      // Redirect permanently using a 308 code
+      redirect: {
+        to: "/writing",
+        statusCode: 308,
+      },
+    },
+  },
   compatibilityDate: "2024-11-04",
 });

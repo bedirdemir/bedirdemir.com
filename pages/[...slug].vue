@@ -13,12 +13,12 @@
           :alt="doc.description"
           class="aspect-[16/9] border-none"
         />
-        <div class="flex gap-2 opacity-70 tracking-widest text-sm lg:text-base">
+        <div class="flex gap-2 opacity-70 tracking-wider text-sm lg:text-base">
           <time :datetime="doc.date">{{ doc.date }}</time>
           <span>·</span>
           <div>{{ readingTime(doc.readingTime.words) }} okuma süresi</div>
         </div>
-        <ContentRenderer :value="doc" class="lg:text-lg" />
+        <ContentRenderer :value="doc" class="lg:text-lg lg:leading-[1.9rem]" />
       </article>
     </template>
     <template #not-found>

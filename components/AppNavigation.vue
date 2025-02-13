@@ -10,7 +10,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/post"
+          to="/writing"
           class="hover:opacity-100 opacity-70 transition-opacity no-underline inline-block w-full"
           >Yazılar</NuxtLink
         >
@@ -20,13 +20,6 @@
           to="/photos"
           class="hover:opacity-100 opacity-70 transition-opacity no-underline inline-block w-full"
           >Fotoğraflar</NuxtLink
-        >
-      </li>
-      <li>
-        <NuxtLink
-          to="/book-notes"
-          class="hover:opacity-100 opacity-70 transition-opacity no-underline inline-block w-full"
-          >Kitap Notları</NuxtLink
         >
       </li>
     </ul>

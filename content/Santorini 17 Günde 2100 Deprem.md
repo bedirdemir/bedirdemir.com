@@ -1,4 +1,5 @@
 ---
+id: 2
 title: "Santorini: 17 Günde 2100 Deprem"
 description: "Yunanistan'ın Santorini adası çevresinde 27 Ocak'tan itibaren kaydedilen deprem sayısı 2100'ü geçti. En büyüğü 5.4 (Mw) büyüklüğünde."
 date: "13 Şubat 2025"
@@ -31,7 +32,7 @@ Bölge Helen Yayı ya da Girit Yayı olarak bilinen, Afrika levhasının Ege Den
 
 Sismik olarak aktif olan bölgede 1956 yılında 13 dakika ara ile büyüklükleri 7.7 ve 7.2 olan iki deprem [meydana gelmişti.](https://www.jmo.org.tr/resimler/ekler/3b1217e2405005b_ek.pdf){:target="\_blank"}
 
-Günümüzdekiyle benzer şekilde 2011-2012 yıllarında da bir sismik aktivite yoğunluğu aynı bölgede 14 ay boyunca [yaşanmıştır.](https://deprem.afad.gov.tr/assets/pdf/ege_denizi.pdf){:target="\_blank"}
+Günümüzdekiyle benzer şekilde 2011-2012 yıllarında da bir sismik aktivite yoğunluğu aynı bölgede 14 ay boyunca [yaşanmıştı.](https://deprem.afad.gov.tr/assets/pdf/ege_denizi.pdf){:target="\_blank"}
 
 ![Helen Yayı](/img/post/helen-yayi.png "Helen Yayı")
 
