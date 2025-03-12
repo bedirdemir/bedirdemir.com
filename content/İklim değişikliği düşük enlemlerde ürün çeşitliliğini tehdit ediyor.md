@@ -36,7 +36,7 @@ Düşük enlem bölgelerindeki ürün çeşitliliğindeki azalma endişe verici,
 Küresel ısınma ilerledikçe, tarımın dünya haritası yeniden çiziliyor. Bu değişimleri anlamak, dirençli ve sürdürülebilir gıda sistemleri geliştirmek için kritik öneme sahip. Bu durum çiftçiler, politika yapıcılar ve araştırmacıların iklime dayanıklı ürün çeşitleri geliştirme, sulama sistemlerini iyileştirme, tarım uygulamalarını çeşitlendirme-iyileştirme, risklerin ve riskli bölgelerin tespit edilmesi gibi uyum stratejileri üzerinde birlikte çalışmalarını gerektiriyor.
 
 ---
-- [https://www.nature.com/articles/s43016-025-01135-w](https://www.nature.com/articles/s43016-025-01135-w){:target="\_"}
+- Heikonen, S., Heino, M., Jalava, M. et al. Climate change threatens crop diversity at low latitudes. Nat Food (2025). [https://doi.org/10.1038/s43016-025-01135-w](https://doi.org/10.1038/s43016-025-01135-w){:target="\_"}
 - [https://www.nature.com/articles/s43016-025-01135-w/figures/1](https://www.nature.com/articles/s43016-025-01135-w/figures/1){:target="\_"}
 - [https://www.nature.com/articles/s43016-025-01135-w/figures/5](https://www.nature.com/articles/s43016-025-01135-w/figures/5){:target="\_"}
 - [https://www.nature.com/articles/s43016-025-01135-w/figures/4](https://www.nature.com/articles/s43016-025-01135-w/figures/4){:target="\_"}
