@@ -1,6 +1,6 @@
 ---
 id: 1
-title: "Hello World"
+title: "Hello world"
 description: "Kişisel web sitem hakkında ilk blog yazım."
 date: "11 Mart 2024"
 image: "/img/post/amy-hirschi-szrJ3wjzOMg-unsplash.jpg"
@@ -21,6 +21,5 @@ Uygulama için Nuxt.js + Nuxt Content + Tailwind.css kullandım. Projenin kaynak
 
 Her ne kadar eklemek istediklerim olsada şu an ki haliyle içime sinen bir "alan" olduğunu söyleyebilirim. Dosya bazlı CMS yapısı ve Nuxt Content'in kullanımına başka bir yazıda daha detaylı olarak değineceğim.
 
---
-
+---
 1. Cover photo by [Amy Hirschi](https://unsplash.com/@amyhirschi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-keyboard-and-a-mouse-on-a-desk-szrJ3wjzOMg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)

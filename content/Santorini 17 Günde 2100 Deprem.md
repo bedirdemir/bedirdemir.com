@@ -1,6 +1,6 @@
 ---
 id: 2
-title: "Santorini: 17 Günde 2100 Deprem"
+title: "Santorini: 17 günde 2100 deprem"
 description: "Yunanistan'ın Santorini adası çevresinde 27 Ocak'tan itibaren kaydedilen deprem sayısı 2100'ü geçti. En büyüğü 5.4 (Mw) büyüklüğünde."
 date: "13 Şubat 2025"
 image: "/img/post/yunanistan-deprem-chart.png"
