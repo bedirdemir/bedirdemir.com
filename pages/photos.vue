@@ -4,10 +4,7 @@
       Fotoğraf çekerek anı biriktirmek çevremdeki detayları ve güzellikleri
       keşfetmemi sağlıyor.
     </p>
-    <div
-      v-if="!stats || status === 'pending' || error"
-      class="text-center mt-8"
-    >
+    <div v-if="status === 'pending' || error" class="text-center mt-8">
       <LoadingSpinner />
     </div>
     <!-- stats -->
@@ -67,7 +64,7 @@
     </div>
   </div>
   <!-- photos -->
-  <div v-if="!photos || status === 'pending' || error" class="text-center mt-8">
+  <div v-if="status === 'pending' || error" class="text-center mt-8">
     <LoadingSpinner />
   </div>
   <div

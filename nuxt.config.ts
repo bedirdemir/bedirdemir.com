@@ -86,6 +86,9 @@ export default defineNuxtConfig({
         statusCode: 308,
       },
     },
+    "/photos": {
+      ssr: false,
+    },
   },
   compatibilityDate: "2024-11-04",
 });
