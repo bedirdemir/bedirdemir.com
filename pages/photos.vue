@@ -86,15 +86,10 @@
 <script setup>
 import LoadingSpinner from "~/components/LoadingSpinner.vue";
 
-const photos = ref([]);
-const stats = ref({ views: { total: 0 }, downloads: { total: 0 } });
-
 const { data, status, error } = await useFetch("/api/photos");
 
-if (data.value) {
-  photos.value = data.value.photos;
-  stats.value = data.value.stats;
-}
+const photos = data.value?.photos;
+const stats = data.value?.stats;
 
 useSeoMeta({
   title: "Fotoğraflar | Bedir Zana Demir",
