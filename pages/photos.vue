@@ -5,7 +5,7 @@
       keşfetmemi sağlıyor.
     </p>
     <div
-      v-if="!data || status !== 'success' || error"
+      v-if="!stats || status === 'pending' || error"
       class="text-center mt-8"
     >
       <LoadingSpinner />
@@ -67,10 +67,7 @@
     </div>
   </div>
   <!-- photos -->
-  <div
-    v-if="!data || status !== 'success' || error"
-    class="text-center mt-8"
-  >
+  <div v-if="!photos || status === 'pending' || error" class="text-center mt-8">
     <LoadingSpinner />
   </div>
   <div
