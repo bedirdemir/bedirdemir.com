@@ -6,7 +6,7 @@
     </p>
     <!-- stats -->
     <div
-      v-if="!pending && !error"
+      v-if="status === 'success' && !error"
       class="grid grid-cols-2 gap-4 lg:gap-10 justify-between mt-10"
     >
       <div
@@ -65,7 +65,7 @@
   </div>
   <!-- photos -->
   <div
-    v-if="!pending && !error"
+    v-if="status === 'success' && !error"
     class="grid items-end gap-y-6 lg:grid-cols-2 lg:gap-y-8 lg:gap-x-6 mt-12"
   >
     <Photo v-for="(photo, i) in photos" :data="photo" :key="i" />
@@ -81,9 +81,9 @@
   </div>
 </template>
 <script setup>
-const { data, pending, error } = await useFetch("/api/photos");
-const photos = data.value.photos;
-const stats = data.value.stats;
+const { data, status, error } = await useFetch("/api/photos");
+const photos = data.value?.photos || [];
+const stats = data.value?.stats || {};
 
 useSeoMeta({
   title: "Fotoğraflar | Bedir Zana Demir",
