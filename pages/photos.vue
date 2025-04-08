@@ -4,11 +4,11 @@
       Fotoğraf çekerek anı biriktirmek çevremdeki detayları ve güzellikleri
       keşfetmemi sağlıyor.
     </p>
+    <div v-if="!status == 'success' || error" class="text-center mt-8">
+      <LoadingSpinner />
+    </div>
     <!-- stats -->
-    <div
-      v-if="status === 'success' && !error"
-      class="grid grid-cols-2 gap-4 lg:gap-10 justify-between mt-10"
-    >
+    <div v-else class="grid grid-cols-2 gap-4 lg:gap-10 justify-between mt-10">
       <div
         class="flex items-center justify-between gap-2 bg-gray-50 rounded-xl shadow-sm border px-4 lg:px-5 py-3 dark:bg-gray-800 dark:border-gray-700"
       >
@@ -64,8 +64,11 @@
     </div>
   </div>
   <!-- photos -->
+  <div v-if="!status == 'success' || error" class="text-center mt-8">
+    <LoadingSpinner />
+  </div>
   <div
-    v-if="status === 'success' && !error"
+    v-else
     class="grid items-end gap-y-6 lg:grid-cols-2 lg:gap-y-8 lg:gap-x-6 mt-12"
   >
     <Photo v-for="(photo, i) in photos" :data="photo" :key="i" />
@@ -81,9 +84,11 @@
   </div>
 </template>
 <script setup>
+import LoadingSpinner from "~/components/LoadingSpinner.vue";
+
 const { data, status, error } = await useFetch("/api/photos");
-const photos = data.value?.photos || [];
-const stats = data.value?.stats || {};
+const photos = data.value?.photos;
+const stats = data.value?.stats;
 
 useSeoMeta({
   title: "Fotoğraflar | Bedir Zana Demir",
