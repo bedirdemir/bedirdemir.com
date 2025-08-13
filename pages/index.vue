@@ -12,7 +12,7 @@
         class="mt-4 opacity-80 font-light text-sm lg:text-base flex flex-col gap-1 lg:gap-2 items-center lg:items-start"
       >
         <div class="">
-          Data analyst & Frontend developer at
+          Data Analyst & Frontend Developer at
           <nuxt-link
             class="underline underline-offset-2"
             target="_blank"
@@ -53,11 +53,13 @@
         class="leading-relaxed lg:leading-[1.85rem] text-slate-700 dark:text-slate-300 text-[1.1rem] lg:text-lg mb-8"
       >
         Çocukluğumdan beri teknolojiye ve yazılıma meraklıyım. Frontend
-        developer olarak kullanıcı deneyimini gözeten web uygulamaları
-        tasarlıyor ve geliştiriyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi
-        ve ürün geliştirmeyi seviyorum. Bunların haricindeki kişisel
-        zamanlarımda kitap okumayı, fotoğraf çekmeyi ve bir ziraat mühendisi
-        adayı olarak doğada olmayı seviyorum.
+        Developer ve Data Analyst olarak, kullanıcı deneyimini gözeten web
+        uygulamaları tasarlıyor ve geliştiriyor; verileri analiz ederek
+        anlamlı sonuçlar üretiyor ve bu sonuçları ürün geliştirme süreçlerine
+        entegre ediyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün
+        geliştirmeyi seviyorum. Bunların haricindeki kişisel zamanlarımda kitap
+        okumayı, fotoğraf çekmeyi ve bir Ziraat Mühendisi olarak doğada olmayı
+        seviyorum.
       </p>
       <!-- social links  -->
       <div class="flex flex-wrap gap-2 justify-center lg:justify-normal">
