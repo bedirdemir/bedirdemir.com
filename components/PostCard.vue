@@ -1,3 +1,18 @@
+<script setup>
+const props = defineProps({
+  data: {
+    type: Object,
+    required: true,
+  },
+});
+const { data } = props;
+
+const readingTime = (words, readingSpeed = 200) => {
+  let min = Math.ceil(words / readingSpeed);
+  return min === 1 ? "1 dakika" : min + " dakika";
+};
+</script>
+
 <template>
   <NuxtLink :to="data._path" class="group">
     <div class="filter contrast-[0.9] mb-4">
@@ -54,20 +69,7 @@
     </div>
   </NuxtLink>
 </template>
-<script setup>
-const props = defineProps({
-  data: {
-    type: Object,
-    required: true,
-  },
-});
-const { data } = props;
 
-const readingTime = (words, readingSpeed = 200) => {
-  let min = Math.ceil(words / readingSpeed);
-  return min === 1 ? "1 dakika" : min + " dakika";
-};
-</script>
 <style scoped>
 .capsule {
   overflow: hidden;

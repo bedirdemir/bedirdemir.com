@@ -1,3 +1,24 @@
+<script setup>
+import LoadingSpinner from "~/components/LoadingSpinner.vue";
+
+const { status, data, error } = await useFetch("/api/photos");
+
+const photos = data.value?.photos;
+const stats = data.value?.stats;
+
+useSeoMeta({
+  title: "Fotoğraflar | Bedir Zana Demir",
+  description:
+    "Fotoğraf çekerek anı biriktirmek çevremdeki detayları ve güzellikleri keşfetmemi sağlıyor.",
+});
+
+const formatNumberWithDot = (number) => {
+  var reversedNumber = number.toString().split("").reverse().join("");
+  var formattedNumber = reversedNumber.match(/.{1,3}/g).join(".");
+  return formattedNumber.split("").reverse().join("");
+};
+</script>
+
 <template>
   <div>
     <p class="text-lg">
@@ -68,7 +89,12 @@
     <LoadingSpinner />
   </div>
   <div v-else class="masonry columns-1 sm:columns-2 lg:columns-2 gap-4 mt-12">
-    <Photo v-for="(photo, i) in photos" :data="photo" :key="i" class="mb-6 lg:mb-4" />
+    <Photo
+      v-for="(photo, i) in photos"
+      :data="photo"
+      :key="i"
+      class="mb-6 lg:mb-4"
+    />
   </div>
   <!-- more -->
   <div class="mt-16 text-center font-medium">
@@ -80,26 +106,6 @@
     >
   </div>
 </template>
-<script setup>
-import LoadingSpinner from "~/components/LoadingSpinner.vue";
-
-const { status, data, error } = await useFetch("/api/photos");
-
-const photos = data.value?.photos;
-const stats = data.value?.stats;
-
-useSeoMeta({
-  title: "Fotoğraflar | Bedir Zana Demir",
-  description:
-    "Fotoğraf çekerek anı biriktirmek çevremdeki detayları ve güzellikleri keşfetmemi sağlıyor.",
-});
-
-const formatNumberWithDot = (number) => {
-  var reversedNumber = number.toString().split("").reverse().join("");
-  var formattedNumber = reversedNumber.match(/.{1,3}/g).join(".");
-  return formattedNumber.split("").reverse().join("");
-};
-</script>
 
 <style scoped>
 .masonry > * {

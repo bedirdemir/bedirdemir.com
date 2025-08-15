@@ -1,5 +1,5 @@
 <template>
-  <footer class="text-center mt-20 pb-10 opacity-60 mx-6">
+  <footer class="text-center text-sm font-light mt-20 pb-10 opacity-50 mx-6">
     <div>
       Bu web sitesinin kaynak kodlarına
       <nuxt-link
@@ -10,6 +10,6 @@
       >
       erişebilirsiniz.
     </div>
-    <div class="mt-3 text-sm font-light">Content © 2025 Bedir Zana Demir</div>
+    <div class="mt-3">Content © 2025 Bedir Zana Demir</div>
   </footer>
 </template>

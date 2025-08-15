@@ -1,3 +1,13 @@
+<script setup>
+const props = defineProps({
+  data: {
+    type: Object,
+    required: true,
+  },
+});
+const { data } = props;
+</script>
+
 <template>
   <nuxt-link
     :to="data.links.html"
@@ -12,12 +22,3 @@
     />
   </nuxt-link>
 </template>
-<script setup>
-const props = defineProps({
-  data: {
-    type: Object,
-    required: true,
-  },
-});
-const { data } = props;
-</script>

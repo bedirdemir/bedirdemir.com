@@ -1,3 +1,10 @@
+<script setup>
+const readingTime = (words, readingSpeed = 200) => {
+  let min = Math.ceil(words / readingSpeed);
+  return min === 1 ? "1 dakika" : min + " dakika";
+};
+</script>
+
 <template>
   <ContentDoc>
     <template #default="{ doc }">
@@ -45,9 +52,3 @@
     </template>
   </ContentDoc>
 </template>
-<script setup>
-const readingTime = (words, readingSpeed = 200) => {
-  let min = Math.ceil(words / readingSpeed);
-  return min === 1 ? "1 dakika" : min + " dakika";
-};
-</script>

@@ -25,6 +25,7 @@
     </ul>
   </nav>
 </template>
+
 <style scoped>
 .router-link-active {
   @apply opacity-100 text-blue-700 dark:text-blue-500;

@@ -1,3 +1,11 @@
+<script setup>
+useSeoMeta({
+  title: "Bedir Zana Demir",
+  description:
+    "Çocukluğumdan beri teknolojiye ve yazılıma meraklıyım. Frontend Developer ve Data Analyst olarak, kullanıcı deneyimini gözeten web uygulamaları tasarlıyor ve geliştiriyorum; verileri analiz ederek anlamlı sonuçlar üretiyor ve bu sonuçları ürün geliştirme süreçlerine entegre ediyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün geliştirmeyi seviyorum. Bunların haricindeki kişisel zamanlarımda kitap okumayı, fotoğraf çekmeyi ve bir Ziraat Mühendisi olarak doğada olmayı seviyorum.",
+});
+</script>
+
 <template>
   <div
     class="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-10 pt-0 lg:pt-4"
@@ -54,12 +62,11 @@
       >
         Çocukluğumdan beri teknolojiye ve yazılıma meraklıyım. Frontend
         Developer ve Data Analyst olarak, kullanıcı deneyimini gözeten web
-        uygulamaları tasarlıyor ve geliştiriyor; verileri analiz ederek
-        anlamlı sonuçlar üretiyor ve bu sonuçları ürün geliştirme süreçlerine
-        entegre ediyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün
-        geliştirmeyi seviyorum. Bunların haricindeki kişisel zamanlarımda kitap
-        okumayı, fotoğraf çekmeyi ve bir Ziraat Mühendisi olarak doğada olmayı
-        seviyorum.
+        uygulamaları tasarlıyor ve geliştiriyorum; verileri analiz ederek anlamlı
+        sonuçlar üretiyor ve bu sonuçları ürün geliştirme süreçlerine entegre
+        ediyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün geliştirmeyi
+        seviyorum. Bunların haricindeki kişisel zamanlarımda kitap okumayı,
+        fotoğraf çekmeyi ve bir Ziraat Mühendisi olarak doğada olmayı seviyorum.
       </p>
       <!-- social links  -->
       <div class="flex flex-wrap gap-2 justify-center lg:justify-normal">
@@ -192,10 +199,3 @@
     </div>
   </div>
 </template>
-<script setup>
-useSeoMeta({
-  title: "Bedir Zana Demir",
-  description:
-    "Çocukluğumdan beri teknolojiye ve yazılıma meraklıyım. Frontend developer olarak kullanıcı deneyimini gözeten web uygulamaları tasarlıyor ve geliştiriyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün geliştirmeyi seviyorum. Bunların haricindeki kişisel zamanlarımda kitap okumayı, fotoğraf çekmeyi ve bir ziraat mühendisi adayı olarak doğada olmayı seviyorum.",
-});
-</script>

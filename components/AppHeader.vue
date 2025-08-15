@@ -1,3 +1,20 @@
+<script setup>
+const isOpen = ref(false);
+const colorMode = useColorMode();
+
+const navToggle = () => {
+  isOpen.value = !isOpen.value;
+};
+
+const colorModeToggle = () => {
+  if (colorMode.value == "light") {
+    colorMode.preference = "dark";
+  } else {
+    colorMode.preference = "light";
+  }
+};
+</script>
+
 <template>
   <header
     class="bg-[#F4F4F5] flex flex-col lg:flex-row justify-between lg:items-center rounded-xl py-4 px-4 lg:p-4 mx-6 dark:bg-gray-800"
@@ -53,19 +70,3 @@
     </div>
   </header>
 </template>
-<script setup>
-const isOpen = ref(false);
-const colorMode = useColorMode();
-
-const navToggle = () => {
-  isOpen.value = !isOpen.value;
-};
-
-const colorModeToggle = () => {
-  if (colorMode.value == "light") {
-    colorMode.preference = "dark";
-  } else {
-    colorMode.preference = "light";
-  }
-};
-</script>

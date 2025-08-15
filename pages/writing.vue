@@ -1,3 +1,12 @@
+<script setup>
+const articles = await queryContent("/").sort({ id: -1 }).find();
+
+useSeoMeta({
+  title: "Yazılar | Bedir Zana Demir",
+  description: "İlgi alanıma giren çeşitli konularda yazdığım notlar.",
+});
+</script>
+
 <template>
   <div>
     <p class="text-lg">İlgi alanıma giren çeşitli konularda yazdığım notlar.</p>
@@ -12,11 +21,3 @@
     <p>Yazı bulunamadı...</p>
   </div>
 </template>
-<script setup>
-const articles = await queryContent("/").sort({ id: -1 }).find();
-
-useSeoMeta({
-  title: "Yazılar | Bedir Zana Demir",
-  description: "İlgi alanıma giren çeşitli konularda yazdığım notlar.",
-});
-</script>
