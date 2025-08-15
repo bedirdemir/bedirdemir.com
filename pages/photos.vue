@@ -67,11 +67,8 @@
   <div v-if="status === 'pending' || error" class="text-center mt-8">
     <LoadingSpinner />
   </div>
-  <div
-    v-else
-    class="grid items-end gap-y-6 lg:grid-cols-2 lg:gap-y-8 lg:gap-x-6 mt-12"
-  >
-    <Photo v-for="(photo, i) in photos" :data="photo" :key="i" />
+  <div v-else class="masonry columns-1 sm:columns-2 lg:columns-2 gap-4 mt-12">
+    <Photo v-for="(photo, i) in photos" :data="photo" :key="i" class="mb-6 lg:mb-4" />
   </div>
   <!-- more -->
   <div class="mt-16 text-center font-medium">
@@ -103,3 +100,17 @@ const formatNumberWithDot = (number) => {
   return formattedNumber.split("").reverse().join("");
 };
 </script>
+
+<style scoped>
+.masonry > * {
+  break-inside: avoid;
+  display: block;
+  width: 100%;
+}
+
+.masonry::after {
+  content: "";
+  display: block;
+  height: 2rem;
+}
+</style>
