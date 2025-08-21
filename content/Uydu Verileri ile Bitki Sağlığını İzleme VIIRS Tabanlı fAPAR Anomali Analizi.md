@@ -6,7 +6,7 @@ date: "21 Ağustos 2025"
 image: "/img/post/ChatGPTImage21Ağu202507_43_04-min.png"
 ---
 
-Bitki sağlığı, tarımsal üretimden ekosistem yönetimine ve iklimsel etkileşimlere kadar pek çok sürecin merkezinde yer almaktadır. Uzaktan algılama teknolojileri, küresel ölçekte bitki örtüsünün durumunu sürekli, nesnel ve karşılaştırılabilir biçimde izleme imkanı sağlamaktadır. Bu bağlamda **fAPAR (Fraction of Absorbed Photosynthetically Active Radiation)** yani fotosentetik olarak aktif radyasyonun bitkiler tarafından absorbe edilen miktarı, en kritik biyofiziksel değişkenlerden biri olarak öne çıkmaktadır.
+Bitki sağlığı, tarımsal üretimden ekosistem yönetimine ve iklimsel etkileşimlere kadar pek çok sürecin merkezinde yer almaktadır. Uzaktan algılama teknolojileri, bitki sağlığının küresel ölçekteki durumunu sürekli, nesnel ve karşılaştırılabilir biçimde izleme imkanı sağlamaktadır. Bu bağlamda **fAPAR (Fraction of Absorbed Photosynthetically Active Radiation)** yani fotosentetik olarak aktif radyasyonun bitkiler tarafından absorbe edilen miktarı, en kritik biyofiziksel değişkenlerden biri olarak öne çıkmaktadır.
 
 fAPAR, fotosentetik spektrumda (400–700 nm) yer alan güneş ışınımının ne kadarının bitkiler tarafından fotosentez için kullanıldığını ölçer. Değeri 0 ile 1 arasında değişen bir parametredir: 0 absorbe olmadığını, 1 ise gelen ışınımın tamamen absorbe edildiğini gösterir. Bu özelliği sayesinde fAPAR, bitki sağlığı ve üretkenliği için doğrudan bir gösterge olarak kullanılmaktadır.
 
@@ -15,7 +15,6 @@ fAPAR hesaplamaları, NASA ve NOAA’nın ortak geliştirdiği VIIRS (Visible In
 fAPAR değerleri VIIRS’in kırmızı (~0,64 µm) ve yakın kızılötesi (~0,86 µm) bantlarından türetilen algoritmalara dayalıdır.
 
 ![[https://pace.oceansciences.org/gallery_more.htm?id=148](https://pace.oceansciences.org/gallery_more.htm?id=148)](/img/post/history08_suomi-npp-min.png)
-
 
 Mutlak fAPAR değerleri bitki örtüsünün mevcut durumunu yansıtsa da, iklimsel stresleri tespit etmek için anomali hesaplamaları daha anlamlıdır. Anomali, belirli bir zaman dilimindeki fAPAR değerinin uzun dönem ortalamasından sapması olarak tanımlanır:
 
@@ -33,5 +32,5 @@ fAPAR anomalileri: Tarımsal ürünlerin gelişiminde yaşanan olumsuz koşullar
 
 ---
 
-- FAPAR and FAPAR Anomaly (VIIRS). [https://drought.emergency.copernicus.eu/data/factsheets/factsheet_fapar_viirs.pdf](https://drought.emergency.copernicus.eu/data/factsheets/factsheet_fapar_viirs.pdf){:target="\_"}
-- Visible Infrared Imaging Radiometer Suite (VIIRS). [https://pace.oceansciences.org/gallery_more.htm?id=148](https://pace.oceansciences.org/gallery_more.htm?id=148){:target="\_"}
+- FAPAR and FAPAR Anomaly (VIIRS). [https://drought.emergency.copernicus.eu](https://drought.emergency.copernicus.eu/data/factsheets/factsheet_fapar_viirs.pdf){:target="\_"}
+- Visible Infrared Imaging Radiometer Suite (VIIRS). [https://pace.oceansciences.org](https://pace.oceansciences.org/gallery_more.htm?id=148){:target="\_"}
