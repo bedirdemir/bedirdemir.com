@@ -3,7 +3,7 @@ id: 4
 title: "Uydu Verileri ile Bitki Sağlığını İzleme: VIIRS Tabanlı fAPAR Anomali Analizi"
 description: "fAPAR anomalileri, tarımsal verim kayıplarının öngörülmesi, ekosistem sağlığının değerlendirilmesi ve kuraklık erken uyarı sistemlerinde kritik rol oynamaktadır."
 date: "21 Ağustos 2025"
-image: "/img/post/ChatGPTImage21Ağu202507_43_04.png"
+image: "/img/post/ChatGPTImage21Ağu202507_43_04-min.png"
 ---
 
 Bitki sağlığı, tarımsal üretimden ekosistem yönetimine ve iklimsel etkileşimlere kadar pek çok sürecin merkezinde yer almaktadır. Uzaktan algılama teknolojileri, küresel ölçekte bitki örtüsünün durumunu sürekli, nesnel ve karşılaştırılabilir biçimde izleme imkanı sağlamaktadır. Bu bağlamda **fAPAR (Fraction of Absorbed Photosynthetically Active Radiation)** yani fotosentetik olarak aktif radyasyonun bitkiler tarafından absorbe edilen miktarı, en kritik biyofiziksel değişkenlerden biri olarak öne çıkmaktadır.
@@ -14,7 +14,7 @@ fAPAR hesaplamaları, NASA ve NOAA’nın ortak geliştirdiği VIIRS (Visible In
 
 fAPAR değerleri VIIRS’in kırmızı (~0,64 µm) ve yakın kızılötesi (~0,86 µm) bantlarından türetilen algoritmalara dayalıdır.
 
-![[https://pace.oceansciences.org/gallery_more.htm?id=148](https://pace.oceansciences.org/gallery_more.htm?id=148)](/img/post/history08_suomi-npp.png)
+![[https://pace.oceansciences.org/gallery_more.htm?id=148](https://pace.oceansciences.org/gallery_more.htm?id=148)](/img/post/history08_suomi-npp-min.png)
 
 
 Mutlak fAPAR değerleri bitki örtüsünün mevcut durumunu yansıtsa da, iklimsel stresleri tespit etmek için anomali hesaplamaları daha anlamlıdır. Anomali, belirli bir zaman dilimindeki fAPAR değerinin uzun dönem ortalamasından sapması olarak tanımlanır:
