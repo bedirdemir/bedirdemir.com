@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  modules: ["@nuxt/content", "@nuxtjs/color-mode"],
+  modules: ["@nuxt/content", "@nuxtjs/color-mode", "nuxt-gtag"],
 
   postcss: {
     plugins: {
@@ -15,6 +15,11 @@ export default defineNuxtConfig({
     markdown: {
       remarkPlugins: ["remark-reading-time"],
     },
+  },
+
+  gtag: {
+    enabled: process.env.NODE_ENV === "production",
+    id: "G-ZLPR3ETG4R",
   },
 
   colorMode: {
@@ -33,7 +38,7 @@ export default defineNuxtConfig({
         {
           property: "og:description",
           content:
-            "Çocukluğumdan beri teknolojiye ve yazılıma meraklıyım. Frontend developer olarak kullanıcı deneyimini gözeten web uygulamaları tasarlıyor ve geliştiriyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün geliştirmeyi seviyorum. Bunların haricindeki kişisel zamanlarımda kitap okumayı, fotoğraf çekmeyi ve bir ziraat mühendisi adayı olarak doğada olmayı seviyorum.",
+            "Çocukluğumdan beri teknolojiye ve yazılıma meraklıyım. Frontend Developer ve Data Analyst olarak, kullanıcı deneyimini gözeten web uygulamaları tasarlıyor ve geliştiriyorum; verileri analiz ederek anlamlı sonuçlar üretiyor ve bu sonuçları ürün geliştirme süreçlerine entegre ediyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün geliştirmeyi seviyorum. Bunların haricindeki kişisel zamanlarımda kitap okumayı, fotoğraf çekmeyi ve bir Ziraat Mühendisi olarak doğada olmayı seviyorum.",
         },
         { property: "og:url", content: "https://bedirdemir.com/" },
         {
@@ -51,22 +56,7 @@ export default defineNuxtConfig({
         {
           name: "twitter:description",
           content:
-            "Çocukluğumdan beri teknoloji ve yazılıma meraklıyım. Frontend developer olarak kullanıcı deneyimini gözeten web uygulamaları tasarlıyor ve geliştiriyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün geliştirmeyi seviyorum. Bunların haricindeki kişisel zamanlarımda kitap okumayı, fotoğraf çekmeyi ve bir ziraat mühendisi adayı olarak doğada olmayı seviyorum.",
-        },
-      ],
-      script: [
-        {
-          src: "https://www.googletagmanager.com/gtag/js?id=G-ZLPR3ETG4R",
-          async: "true",
-        },
-        {
-          children: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-ZLPR3ETG4R');
-        `,
+            "Çocukluğumdan beri teknolojiye ve yazılıma meraklıyım. Frontend Developer ve Data Analyst olarak, kullanıcı deneyimini gözeten web uygulamaları tasarlıyor ve geliştiriyorum; verileri analiz ederek anlamlı sonuçlar üretiyor ve bu sonuçları ürün geliştirme süreçlerine entegre ediyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün geliştirmeyi seviyorum. Bunların haricindeki kişisel zamanlarımda kitap okumayı, fotoğraf çekmeyi ve bir Ziraat Mühendisi olarak doğada olmayı seviyorum.",
         },
       ],
     },
