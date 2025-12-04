@@ -20,7 +20,7 @@ useSeoMeta({
         class="mt-4 opacity-80 font-light text-sm lg:text-base flex flex-col gap-1 lg:gap-2 items-center lg:items-start"
       >
         <div class="">
-          Data Analyst & Frontend Developer at
+          data analyst • frontend developer • agricultural economics & engineer at
           <nuxt-link
             class="underline underline-offset-2"
             target="_blank"
