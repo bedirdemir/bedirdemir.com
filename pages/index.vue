@@ -19,8 +19,8 @@ useSeoMeta({
       <div
         class="mt-4 opacity-80 font-light text-sm lg:text-base flex flex-col gap-1 lg:gap-2 items-center lg:items-start"
       >
-        <div class="">
-          data analyst • frontend developer • agricultural economics & engineer at
+        <div class="text-center lg:text-left">
+          data analyst, frontend developer, agricultural economics & engineer at
           <nuxt-link
             class="underline underline-offset-2"
             target="_blank"
@@ -28,7 +28,7 @@ useSeoMeta({
             >tarla.io</nuxt-link
           >
         </div>
-        <div>Ankara, Türkiye</div>
+        <div class="">Ankara, Türkiye</div>
       </div>
     </div>
     <div class="lg:w-3/4 text-center lg:text-left">
@@ -62,11 +62,12 @@ useSeoMeta({
       >
         Çocukluğumdan beri teknolojiye ve yazılıma meraklıyım. Frontend
         Developer ve Data Analyst olarak, kullanıcı deneyimini gözeten web
-        uygulamaları tasarlıyor ve geliştiriyorum; verileri analiz ederek anlamlı
-        sonuçlar üretiyor ve bu sonuçları ürün geliştirme süreçlerine entegre
-        ediyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün geliştirmeyi
-        seviyorum. Bunların haricindeki kişisel zamanlarımda kitap okumayı,
-        fotoğraf çekmeyi ve bir Ziraat Mühendisi olarak doğada olmayı seviyorum.
+        uygulamaları tasarlıyor ve geliştiriyorum; verileri analiz ederek
+        anlamlı sonuçlar üretiyor ve bu sonuçları ürün geliştirme süreçlerine
+        entegre ediyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün
+        geliştirmeyi seviyorum. Kişisel zamanlarımda kitap
+        okumayı, fotoğraf çekmeyi ve bir Ziraat Mühendisi olarak doğada olmayı
+        seviyorum.
       </p>
       <!-- social links  -->
       <div class="flex flex-wrap gap-2 justify-center lg:justify-normal">
