@@ -3,7 +3,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: "app/",
   css: ["~/assets/css/main.css"],
-  modules: ["@nuxt/content", "@nuxtjs/color-mode", "nuxt-gtag", "nuxt-studio"],
+  modules: [
+    "@nuxt/content",
+    "@nuxt/image",
+    "@nuxtjs/color-mode",
+    "nuxt-gtag",
+    "nuxt-studio",
+  ],
 
   postcss: {
     plugins: {
@@ -39,6 +45,12 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
     preference: "light",
+  },
+
+  image: {
+    format: ["avif", "webp"],
+    quality: 75,
+    domains: ["images.unsplash.com"],
   },
 
   app: {

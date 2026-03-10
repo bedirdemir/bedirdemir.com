@@ -14,11 +14,17 @@ const { data } = props;
     class="focus:scale-105 duration-500 transition-all"
     target="_blank"
   >
-    <img
+    <NuxtImg
       class="rounded-lg"
       loading="lazy"
+      decoding="async"
       :src="data.urls.regular"
-      :alt="data.description"
+      :alt="data.description || data.alt_description || 'Unsplash photo'"
+      :width="data.width"
+      :height="data.height"
+      sizes="100vw sm:50vw lg:50vw"
+      format="webp"
+      quality="70"
     />
   </nuxt-link>
 </template>

@@ -28,7 +28,20 @@ const readingTime = (words, readingSpeed = 200) => {
     <h2 class="my-5 text-xl font-normal opacity-90">
       {{ doc.description }}
     </h2>
-    <img :src="doc.image" :alt="doc.description" class="aspect-[16/9] border-none" />
+    <NuxtImg
+      :src="doc.image"
+      :alt="doc.description"
+      class="aspect-[16/9] border-none"
+      width="1400"
+      height="788"
+      sizes="100vw lg:960px"
+      format="webp"
+      quality="80"
+      loading="eager"
+      decoding="async"
+      preload
+      fetchpriority="high"
+    />
     <div class="flex gap-2 opacity-70 tracking-wider text-sm lg:text-base">
       <time :datetime="doc.date">{{ doc.date }}</time>
       <template v-if="doc.readingTime?.words">

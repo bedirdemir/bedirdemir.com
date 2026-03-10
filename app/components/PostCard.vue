@@ -16,10 +16,17 @@ const readingTime = (words, readingSpeed = 200) => {
 <template>
   <NuxtLink :to="data.path" class="group">
     <div class="filter contrast-[0.9] mb-4">
-      <img
+      <NuxtImg
         :src="data.image"
         :alt="data.description"
         class="object-cover w-full transition duration-300 rounded-lg aspect-[16/9] group-hover:opacity-90"
+        width="1200"
+        height="675"
+        sizes="100vw lg:50vw"
+        format="webp"
+        quality="75"
+        loading="lazy"
+        decoding="async"
       />
     </div>
     <!-- details  -->
