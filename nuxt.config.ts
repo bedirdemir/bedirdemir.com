@@ -105,5 +105,5 @@ export default defineNuxtConfig({
       swr: 3600,
     },
   },
-  compatibilityDate: "2024-11-04",
+  compatibilityDate: "2026-03-10",
 });

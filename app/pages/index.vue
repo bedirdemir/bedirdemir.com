@@ -20,7 +20,8 @@ useSeoMeta({
         class="mt-4 opacity-80 font-light text-sm lg:text-base flex flex-col gap-1 lg:gap-2 items-center lg:items-start"
       >
         <div class="text-center lg:text-left">
-          data analyst, frontend developer, agricultural economics & engineer at
+          AgriTech Software & Data Specialist | Frontend Development, Climate
+          Analytics, Smart Farming at
           <nuxt-link
             class="underline underline-offset-2"
             target="_blank"
@@ -65,9 +66,8 @@ useSeoMeta({
         uygulamaları tasarlıyor ve geliştiriyorum; verileri analiz ederek
         anlamlı sonuçlar üretiyor ve bu sonuçları ürün geliştirme süreçlerine
         entegre ediyorum. Yeni teknolojileri keşfetmeyi, öğrenmeyi ve ürün
-        geliştirmeyi seviyorum. Kişisel zamanlarımda kitap
-        okumayı, fotoğraf çekmeyi ve bir Ziraat Mühendisi olarak doğada olmayı
-        seviyorum.
+        geliştirmeyi seviyorum. Kişisel zamanlarımda kitap okumayı, fotoğraf
+        çekmeyi ve bir Ziraat Mühendisi olarak doğada olmayı seviyorum.
       </p>
       <!-- social links  -->
       <div class="flex flex-wrap gap-2 justify-center lg:justify-normal">
