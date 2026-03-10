@@ -1,42 +1,52 @@
-# Content v2 Minimal Starter
+# bedirdemir.com
 
-Look at the [Content documentation](https://content.nuxt.com/) to learn more.
+Kişisel web sitesi. `Nuxt 4 + Nuxt Content + Nuxt Studio` ile çalışır.
 
-## Setup
-
-Make sure to install the dependencies:
+## Kurulum
 
 ```bash
-# yarn
-yarn install
-
-# npm
 npm install
-
-# pnpm
-pnpm install
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
+## Geliştirme
 
 ```bash
 npm run dev
 ```
 
-## Production
+Varsayılan local adres: `http://localhost:3002`
 
-Build the application for production:
+## Nuxt Studio
+
+Studio arayüzü: `/_studio`
+
+### Local kullanım
+
+Localde editör otomatik çalışır. Markdown dosyalarını ve medyaları görsel olarak düzenleyebilirsin.
+
+### Production yayınlama (GitHub OAuth)
+
+`/.env` veya hosting environment değişkenlerine şunları ekle:
+
+```bash
+STUDIO_GITHUB_CLIENT_ID=...
+STUDIO_GITHUB_CLIENT_SECRET=...
+```
+
+Opsiyonel:
+
+```bash
+STUDIO_GITHUB_REDIRECT_URL=https://your-domain.com/__nuxt_studio/auth/github
+STUDIO_GITHUB_MODERATORS=you@example.com
+```
+
+GitHub OAuth App callback URL için önerilen değer:
+
+`https://your-domain.com/__nuxt_studio/auth/github`
+
+## Build
 
 ```bash
 npm run build
 ```
 
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

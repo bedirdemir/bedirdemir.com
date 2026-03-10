@@ -1,8 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  srcDir: "app/",
   css: ["~/assets/css/main.css"],
-  modules: ["@nuxt/content", "@nuxtjs/color-mode", "nuxt-gtag"],
+  modules: ["@nuxt/content", "@nuxtjs/color-mode", "nuxt-gtag", "nuxt-studio"],
 
   postcss: {
     plugins: {
@@ -12,8 +13,21 @@ export default defineNuxtConfig({
   },
 
   content: {
-    markdown: {
-      remarkPlugins: ["remark-reading-time"],
+    build: {
+      markdown: {
+        remarkPlugins: {
+          "remark-reading-time": {},
+        },
+      },
+    },
+  },
+  studio: {
+    route: "/_studio",
+    repository: {
+      provider: "github",
+      owner: "bedirdemir",
+      repo: "bedirdemir.com",
+      branch: "master",
     },
   },
 
@@ -62,22 +76,21 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    // "/post/**": {
-    //   // Redirect permanently using a 308 code
-    //   redirect: {
-    //     to: "/**",
-    //     statusCode: 308,
-    //   },
-    // },
-    // "/post": {
-    //   // Redirect permanently using a 308 code
-    //   redirect: {
-    //     to: "/writing",
-    //     statusCode: 308,
-    //   },
-    // },
+    "/": {
+      prerender: true,
+    },
+    "/writing": {
+      prerender: true,
+      swr: 3600,
+    },
+    "/writing/**": {
+      swr: 3600,
+    },
     "/photos": {
-      ssr: false,
+      swr: 3600,
+    },
+    "/api/photos": {
+      swr: 3600,
     },
   },
   compatibilityDate: "2024-11-04",

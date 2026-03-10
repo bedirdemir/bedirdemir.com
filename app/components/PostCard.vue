@@ -14,7 +14,7 @@ const readingTime = (words, readingSpeed = 200) => {
 </script>
 
 <template>
-  <NuxtLink :to="data._path" class="group">
+  <NuxtLink :to="data.path" class="group">
     <div class="filter contrast-[0.9] mb-4">
       <img
         :src="data.image"
@@ -57,7 +57,9 @@ const readingTime = (words, readingSpeed = 200) => {
             />
             <path fill="currentColor" d="M480 192h64v704h-64z" />
           </svg>
-          <div>{{ readingTime(data.readingTime.words) }}</div>
+          <div v-if="data.readingTime?.words">
+            {{ readingTime(data.readingTime.words) }}
+          </div>
         </div>
       </div>
       <h2 class="text-lg font-semibold text-gray-900 dark:text-gray-50">

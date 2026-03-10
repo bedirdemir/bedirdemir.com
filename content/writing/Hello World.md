@@ -1,5 +1,5 @@
 ---
-id: 1
+postId: 1
 title: "Hello world"
 description: "Kişisel web sitem hakkında ilk blog yazım."
 date: "11 Mart 2024"

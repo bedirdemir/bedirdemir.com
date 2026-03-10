@@ -1,5 +1,5 @@
 <script setup>
-const articles = await queryContent("/").sort({ id: -1 }).find();
+const articles = await queryCollection("content").order("postId", "DESC").all();
 
 useSeoMeta({
   title: "Yazılar | Bedir Zana Demir",
@@ -15,7 +15,7 @@ useSeoMeta({
     v-if="articles.length > 0"
     class="grid gap-11 lg:grid-cols-2 lg:gap-x-9 lg:gap-y-12 mt-10"
   >
-    <PostCard v-for="post in articles" :data="post" :key="post._path" />
+    <PostCard v-for="post in articles" :data="post" :key="post.path" />
   </div>
   <div v-else class="mt-4 font-semibold text-lg">
     <p>Yazı bulunamadı...</p>

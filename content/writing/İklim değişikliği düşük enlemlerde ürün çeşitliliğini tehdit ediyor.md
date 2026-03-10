@@ -1,5 +1,5 @@
 ---
-id: 3
+postId: 3
 title: "İklim değişikliği düşük enlemlerde ürün çeşitliliğini tehdit ediyor"
 description: "Yeni bir araştırmaya göre iklim değişikliği, 2°C’lik ısınmada bile düşük enlem bölgelerindeki üretimin %10-31’ini risk altında bırakacak."
 date: "12 Mart 2025"

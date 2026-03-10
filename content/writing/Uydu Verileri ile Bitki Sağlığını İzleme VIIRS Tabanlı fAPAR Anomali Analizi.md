@@ -1,5 +1,5 @@
 ---
-id: 4
+postId: 4
 title: "Uydu Verileri ile Bitki Sağlığını İzleme: VIIRS Tabanlı fAPAR Anomali Analizi"
 description: "fAPAR anomalileri, tarımsal verim kayıplarının öngörülmesi, ekosistem sağlığının değerlendirilmesi ve kuraklık erken uyarı sistemlerinde kritik rol oynamaktadır."
 date: "21 Ağustos 2025"
