@@ -22,7 +22,7 @@ const { data } = props;
       :alt="data.description || data.alt_description || 'Unsplash photo'"
       :width="data.width"
       :height="data.height"
-      sizes="100vw sm:50vw lg:50vw"
+      sizes="100vw sm:50vw lg:50vw xl:33vw"
       format="webp"
       quality="70"
     />

@@ -3,8 +3,8 @@ import LoadingSpinner from "~/components/LoadingSpinner.vue";
 
 const { status, data, error } = await useFetch("/api/photos");
 
-const photos = data.value?.photos;
-const stats = data.value?.stats;
+const photos = computed(() => data.value?.photos || []);
+const stats = computed(() => data.value?.stats || null);
 
 useSeoMeta({
   title: "Fotoğraflar | Bedir Zana Demir",
@@ -12,11 +12,22 @@ useSeoMeta({
     "Fotoğraf çekerek anı biriktirmek çevremdeki detayları ve güzellikleri keşfetmemi sağlıyor.",
 });
 
-const formatNumberWithDot = (number) => {
-  var reversedNumber = number.toString().split("").reverse().join("");
-  var formattedNumber = reversedNumber.match(/.{1,3}/g).join(".");
-  return formattedNumber.split("").reverse().join("");
+const numberFormatter = new Intl.NumberFormat("tr-TR");
+
+const formatNumber = (number) => {
+  const safeNumber = Number(number) || 0;
+  return numberFormatter.format(safeNumber);
 };
+
+const errorMessage = computed(() => {
+  const fetchError = error.value || {};
+
+  return (
+    fetchError?.data?.message ||
+    fetchError?.statusMessage ||
+    "Fotoğraflar yüklenirken bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+  );
+});
 </script>
 
 <template>
@@ -25,11 +36,23 @@ const formatNumberWithDot = (number) => {
       Fotoğraf çekerek anı biriktirmek çevremdeki detayları ve güzellikleri
       keşfetmemi sağlıyor.
     </p>
-    <div v-if="status === 'pending' || error" class="text-center mt-8">
-      <LoadingSpinner />
-    </div>
+  </div>
+
+  <div v-if="status === 'pending'" class="text-center mt-8">
+    <LoadingSpinner />
+  </div>
+
+  <div
+    v-else-if="error"
+    class="mt-8 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-red-800 dark:border-red-900/40 dark:bg-red-950/30 dark:text-red-200"
+  >
+    <p class="font-semibold">Fotoğraflar yüklenemedi.</p>
+    <p class="mt-1 text-sm">{{ errorMessage }}</p>
+  </div>
+
+  <template v-else>
     <!-- stats -->
-    <div v-else class="grid grid-cols-2 gap-4 lg:gap-10 justify-between mt-10">
+    <div class="grid grid-cols-2 gap-4 lg:gap-10 justify-between mt-8 lg:mt-10">
       <div
         class="flex items-center justify-between gap-2 bg-gray-50 rounded-xl shadow-sm border px-4 lg:px-5 py-3 dark:bg-gray-800 dark:border-gray-700"
       >
@@ -38,7 +61,7 @@ const formatNumberWithDot = (number) => {
             GÖRÜNTÜLEME
           </div>
           <div class="font-semibold text-xl leading-none">
-            {{ formatNumberWithDot(stats.views.total) }}
+            {{ formatNumber(stats?.views?.total) }}
           </div>
         </div>
         <svg
@@ -63,7 +86,7 @@ const formatNumberWithDot = (number) => {
         <div class="flex flex-col gap-1">
           <div class="font-mono text-sm tracking-wider uppercase">İNDİRME</div>
           <div class="font-semibold text-xl leading-none">
-            {{ formatNumberWithDot(stats.downloads.total) }}
+            {{ formatNumber(stats?.downloads?.total) }}
           </div>
         </div>
         <svg
@@ -83,28 +106,37 @@ const formatNumberWithDot = (number) => {
         </svg>
       </div>
     </div>
-  </div>
-  <!-- photos -->
-  <div v-if="status === 'pending' || error" class="text-center mt-8">
-    <LoadingSpinner />
-  </div>
-  <div v-else class="masonry columns-1 sm:columns-2 lg:columns-2 gap-4 mt-12">
-    <Photo
-      v-for="(photo, i) in photos"
-      :data="photo"
-      :key="i"
-      class="mb-6 lg:mb-4"
-    />
-  </div>
-  <!-- more -->
-  <div class="mt-16 text-center font-medium">
-    <nuxt-link
-      to="https://unsplash.com/@bedirdemir"
-      target="_blank"
-      class="bg-gray-100 p-3 rounded-xl transition-opacity hover:opacity-85 dark:text-gray-900"
-      >Tüm fotoğrafları gör...</nuxt-link
+    <!-- photos -->
+    <div
+      v-if="photos.length > 0"
+      class="mt-8 lg:mt-10 lg:relative lg:left-1/2 lg:right-1/2 lg:w-screen lg:max-w-[1200px] lg:-translate-x-1/2 lg:px-6"
     >
-  </div>
+      <div class="masonry columns-1 sm:columns-2 xl:columns-3 gap-4">
+        <Photo
+          v-for="photo in photos"
+          :data="photo"
+          :key="photo.id"
+          class="mb-6 lg:mb-4"
+        />
+      </div>
+    </div>
+    <div
+      v-else
+      class="mt-12 rounded-xl border border-gray-200 px-4 py-3 text-gray-600 dark:border-gray-700 dark:text-gray-300"
+    >
+      Gösterilecek fotoğraf bulunamadı.
+    </div>
+
+    <!-- more -->
+    <div class="mt-16 text-center font-medium">
+      <nuxt-link
+        to="https://unsplash.com/@bedirdemir"
+        target="_blank"
+        class="bg-gray-100 p-3 rounded-xl transition-opacity hover:opacity-85 dark:text-gray-900"
+        >Tüm fotoğrafları gör...</nuxt-link
+      >
+    </div>
+  </template>
 </template>
 
 <style scoped>
