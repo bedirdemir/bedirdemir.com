@@ -98,9 +98,6 @@ export default defineNuxtConfig({
     "/writing/**": {
       swr: 3600,
     },
-    "/photos": {
-      swr: 3600,
-    },
     "/api/photos": {
       swr: 3600,
     },
